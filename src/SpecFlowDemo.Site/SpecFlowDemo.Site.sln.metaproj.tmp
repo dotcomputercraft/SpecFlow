@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" InitialTargets="ValidateSolutionConfiguration;ValidateToolsVersions;ValidateProjects">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportBefore\*" Condition="'$(ImportByWildcardBeforeSolution)' != 'false' and exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportBefore')" />
+  <Import Project="E:\Projects\SpecFlow\Code_Satrom.SpecFlow.1210\MSDNMag-SpecFlow\src\SpecFlowDemo.Site\before.SpecFlowDemo.Site.sln.targets" Condition="exists('E:\Projects\SpecFlow\Code_Satrom.SpecFlow.1210\MSDNMag-SpecFlow\src\SpecFlowDemo.Site\before.SpecFlowDemo.Site.sln.targets')" />
+  <PropertyGroup Condition=" '$(Configuration)' == '' ">
+    <Configuration>Debug</Configuration>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == '' ">
+    <Platform>Any CPU</Platform>
+  </PropertyGroup>
+  <PropertyGroup Condition=" ('$(AspNetConfiguration)' == '') ">
+    <AspNetConfiguration>$(Configuration)</AspNetConfiguration>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SolutionDir>E:\Projects\SpecFlow\Code_Satrom.SpecFlow.1210\MSDNMag-SpecFlow\src\SpecFlowDemo.Site\</SolutionDir>
+    <SolutionExt>.sln</SolutionExt>
+    <SolutionFileName>SpecFlowDemo.Site.sln</SolutionFileName>
+    <SolutionName>SpecFlowDemo.Site</SolutionName>
+    <SolutionPath>E:\Projects\SpecFlow\Code_Satrom.SpecFlow.1210\MSDNMag-SpecFlow\src\SpecFlowDemo.Site\SpecFlowDemo.Site.sln</SolutionPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetFrameworkVersion Condition="'$(TargetFrameworkVersion)' == '' and '$(MSBuildToolsVersion)' == '2.0'">v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion Condition="'$(TargetFrameworkVersion)' == '' and ('$(MSBuildToolsVersion)' == '3.5' or '$(MSBuildToolsVersion)' == '3.0')">v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion Condition="'$(TargetFrameworkVersion)' == '' and '$(MSBuildToolsVersion)' == '4.0'">v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" ('$(Configuration)' == 'Debug') and ('$(Platform)' == 'Any CPU') ">
+    <CurrentSolutionConfigurationContents>
+      <SolutionConfiguration xmlns="">
+  <ProjectConfiguration Project="{3E5A000D-8ECB-4C13-9494-74957450A7D2}" AbsolutePath="E:\Projects\SpecFlow\Code_Satrom.SpecFlow.1210\MSDNMag-SpecFlow\src\SpecFlowDemo.Site\SpecFlowDemo.Site.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{699F0181-0DB5-40F2-893E-6CB1672B93B7}" AbsolutePath="E:\Projects\SpecFlow\Code_Satrom.SpecFlow.1210\MSDNMag-SpecFlow\src\SpecFlowDemo.Site\..\SpecFlowDemo.UnitTests\SpecFlowDemo.UnitTests.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{D85F27EB-61EB-422C-A1D8-5A054EB92D26}" AbsolutePath="E:\Projects\SpecFlow\Code_Satrom.SpecFlow.1210\MSDNMag-SpecFlow\src\SpecFlowDemo.Site\..\SpecFlowDemo.AcceptanceTests\SpecFlowDemo.AcceptanceTests.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{75F63D2C-D12C-4B0C-8245-EBB37ECC4C0A}" AbsolutePath="E:\Projects\SpecFlow\Code_Satrom.SpecFlow.1210\MSDNMag-SpecFlow\src\SpecFlowDemo.Site\..\SpecFlowDemo.Core\SpecFlowDemo.Core.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{A26990B6-884F-4A8C-9F19-EBC84E1C5409}" AbsolutePath="E:\Projects\SpecFlow\Code_Satrom.SpecFlow.1210\MSDNMag-SpecFlow\src\SpecFlowDemo.Site\SpecFlowDemo.Infrastructure\SpecFlowDemo.Infrastructure.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+</SolutionConfiguration>
+    </CurrentSolutionConfigurationContents>
+  </PropertyGroup>
+  <PropertyGroup Condition=" ('$(Configuration)' == 'Release') and ('$(Platform)' == 'Any CPU') ">
+    <CurrentSolutionConfigurationContents>
+      <SolutionConfiguration xmlns="">
+  <ProjectConfiguration Project="{3E5A000D-8ECB-4C13-9494-74957450A7D2}" AbsolutePath="E:\Projects\SpecFlow\Code_Satrom.SpecFlow.1210\MSDNMag-SpecFlow\src\SpecFlowDemo.Site\SpecFlowDemo.Site.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{699F0181-0DB5-40F2-893E-6CB1672B93B7}" AbsolutePath="E:\Projects\SpecFlow\Code_Satrom.SpecFlow.1210\MSDNMag-SpecFlow\src\SpecFlowDemo.Site\..\SpecFlowDemo.UnitTests\SpecFlowDemo.UnitTests.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{D85F27EB-61EB-422C-A1D8-5A054EB92D26}" AbsolutePath="E:\Projects\SpecFlow\Code_Satrom.SpecFlow.1210\MSDNMag-SpecFlow\src\SpecFlowDemo.Site\..\SpecFlowDemo.AcceptanceTests\SpecFlowDemo.AcceptanceTests.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{75F63D2C-D12C-4B0C-8245-EBB37ECC4C0A}" AbsolutePath="E:\Projects\SpecFlow\Code_Satrom.SpecFlow.1210\MSDNMag-SpecFlow\src\SpecFlowDemo.Site\..\SpecFlowDemo.Core\SpecFlowDemo.Core.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{A26990B6-884F-4A8C-9F19-EBC84E1C5409}" AbsolutePath="E:\Projects\SpecFlow\Code_Satrom.SpecFlow.1210\MSDNMag-SpecFlow\src\SpecFlowDemo.Site\SpecFlowDemo.Infrastructure\SpecFlowDemo.Infrastructure.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+</SolutionConfiguration>
+    </CurrentSolutionConfigurationContents>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportAfter\*" Condition="'$(ImportByWildcardBeforeSolution)' != 'false' and exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportAfter')" />
+  <Import Project="E:\Projects\SpecFlow\Code_Satrom.SpecFlow.1210\MSDNMag-SpecFlow\src\SpecFlowDemo.Site\after.SpecFlowDemo.Site.sln.targets" Condition="exists('E:\Projects\SpecFlow\Code_Satrom.SpecFlow.1210\MSDNMag-SpecFlow\src\SpecFlowDemo.Site\after.SpecFlowDemo.Site.sln.targets')" />
+  <Target Name="Build" />
+  <Target Name="Rebuild" />
+  <Target Name="Clean" />
+  <Target Name="Publish" />
+</Project>
